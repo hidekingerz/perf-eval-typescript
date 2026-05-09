@@ -1,0 +1,15 @@
+{
+  "size": "medium",
+  "seed": 1,
+  "profile": {
+    "fileCount": 100,
+    "fnPerFile": 6,
+    "classPerFile": 2,
+    "genericChainDepth": 3,
+    "conditionalRatio": 0.3,
+    "mappedRatio": 0.3,
+    "importFanout": 3
+  },
+  "fileCount": 101,
+  "generator": "tools/gen-fixtures.ts"
+}

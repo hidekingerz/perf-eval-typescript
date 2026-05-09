@@ -1,0 +1,15 @@
+{
+  "name": "@bench/ts8",
+  "private": true,
+  "version": "0.0.0",
+  "description": "TypeScript 8 placeholder workspace. As of 2026-05, typescript@8 is unpublished. Replace the devDependency below when it ships.",
+  "scripts": {
+    "typecheck:small": "tsc -p tsconfig.small.json --noEmit",
+    "typecheck:medium": "tsc -p tsconfig.medium.json --noEmit",
+    "typecheck:large": "tsc -p tsconfig.large.json --noEmit",
+    "build:small": "tsc -p tsconfig.small.json",
+    "build:medium": "tsc -p tsconfig.medium.json",
+    "build:large": "tsc -p tsconfig.large.json"
+  },
+  "devDependencies": {}
+}

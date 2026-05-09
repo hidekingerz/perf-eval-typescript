@@ -1,0 +1,6 @@
+{
+  "label": "TS 6 (JS impl)",
+  "compilerBin": "tsc",
+  "available": true,
+  "note": "Stock typescript@6 from npm (Node-based compiler)."
+}

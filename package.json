@@ -1,0 +1,26 @@
+{
+  "name": "perf-eval-ts8",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Benchmark environment comparing TypeScript 6 / 7 / 8 (Go-rewritten) compilers.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "setup": "npm install",
+    "gen": "tsx tools/gen-fixtures.ts --size small && tsx tools/gen-fixtures.ts --size medium && tsx tools/gen-fixtures.ts --size large",
+    "gen:small": "tsx tools/gen-fixtures.ts --size small",
+    "gen:medium": "tsx tools/gen-fixtures.ts --size medium",
+    "gen:large": "tsx tools/gen-fixtures.ts --size large",
+    "bench": "tsx tools/run-bench.ts",
+    "diff": "tsx tools/diff-emit.ts",
+    "report": "tsx tools/report.ts",
+    "all": "npm run gen && npm run bench && npm run diff && npm run report"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

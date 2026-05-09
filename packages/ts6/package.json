@@ -1,0 +1,17 @@
+{
+  "name": "@bench/ts6",
+  "private": true,
+  "version": "0.0.0",
+  "description": "TypeScript 6 (JS implementation) bench workspace.",
+  "scripts": {
+    "typecheck:small": "tsc -p tsconfig.small.json --noEmit",
+    "typecheck:medium": "tsc -p tsconfig.medium.json --noEmit",
+    "typecheck:large": "tsc -p tsconfig.large.json --noEmit",
+    "build:small": "tsc -p tsconfig.small.json",
+    "build:medium": "tsc -p tsconfig.medium.json",
+    "build:large": "tsc -p tsconfig.large.json"
+  },
+  "devDependencies": {
+    "typescript": "6"
+  }
+}

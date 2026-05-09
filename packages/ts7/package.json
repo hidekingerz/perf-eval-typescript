@@ -1,0 +1,17 @@
+{
+  "name": "@bench/ts7",
+  "private": true,
+  "version": "0.0.0",
+  "description": "TypeScript 7 (Go native preview) bench workspace. Uses @typescript/native-preview which provides the `tsgo` binary.",
+  "scripts": {
+    "typecheck:small": "tsgo -p tsconfig.small.json --noEmit",
+    "typecheck:medium": "tsgo -p tsconfig.medium.json --noEmit",
+    "typecheck:large": "tsgo -p tsconfig.large.json --noEmit",
+    "build:small": "tsgo -p tsconfig.small.json",
+    "build:medium": "tsgo -p tsconfig.medium.json",
+    "build:large": "tsgo -p tsconfig.large.json"
+  },
+  "devDependencies": {
+    "@typescript/native-preview": "7.0.0-dev.20260508.1"
+  }
+}
