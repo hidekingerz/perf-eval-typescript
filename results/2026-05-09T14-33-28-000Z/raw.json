@@ -1,0 +1,463 @@
+{
+  "ts": "2026-05-09T14-33-28-000Z",
+  "env": {
+    "node": "v24.15.0",
+    "platform": "linux-x64",
+    "iterations": 5,
+    "warmup": 1,
+    "rssSamplerIntervalMs": 25,
+    "cpuModel": {
+      "node": "24.15.0",
+      "acorn": "8.16.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.8",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.2",
+      "llhttp": "9.3.1",
+      "merve": "1.2.2",
+      "modules": "137",
+      "napi": "10",
+      "nbytes": "0.1.3",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.68.0",
+      "openssl": "3.5.5",
+      "simdjson": "4.5.0",
+      "simdutf": "6.4.0",
+      "sqlite": "3.51.3",
+      "tz": "2026a",
+      "undici": "7.24.4",
+      "unicode": "17.0",
+      "uv": "1.51.0",
+      "uvwasi": "0.0.23",
+      "v8": "13.6.233.17-node.48",
+      "zlib": "1.3.1-e00f703",
+      "zstd": "1.5.7"
+    }
+  },
+  "runs": [
+    {
+      "version": "ts6",
+      "size": "small",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        415.285978,
+        322.492559,
+        381.40870599999994,
+        352.9062859999999,
+        431.57085700000016
+      ],
+      "medianMs": 381.40870599999994,
+      "p95Ms": 431.57085700000016,
+      "peakRssKb": 116296,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts6",
+      "size": "small",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        365.84873400000015,
+        372.41698099999985,
+        383.2003689999997,
+        380.88285799999994,
+        403.62905899999987
+      ],
+      "medianMs": 380.88285799999994,
+      "p95Ms": 403.62905899999987,
+      "peakRssKb": 118140,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts6",
+      "size": "medium",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        1397.4882860000007,
+        833.1941380000007,
+        880.4250609999999,
+        867.0661400000008,
+        838.9152730000005
+      ],
+      "medianMs": 867.0661400000008,
+      "p95Ms": 1397.4882860000007,
+      "peakRssKb": 204412,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts6",
+      "size": "medium",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        979.3505109999987,
+        994.8481090000005,
+        1064.1925809999993,
+        1001.230230000001,
+        1058.344184999998
+      ],
+      "medianMs": 1001.230230000001,
+      "p95Ms": 1064.1925809999993,
+      "peakRssKb": 211240,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts6",
+      "size": "large",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        4889.5250510000005,
+        5127.8407599999955,
+        4923.664732999998,
+        4939.839275999999,
+        4958.857901999996
+      ],
+      "medianMs": 4939.839275999999,
+      "p95Ms": 5127.8407599999955,
+      "peakRssKb": 743048,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts6",
+      "size": "large",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        6366.6970070000025,
+        6514.963111999998,
+        6670.015511000005,
+        6452.331585000007,
+        6530.689931999994
+      ],
+      "medianMs": 6514.963111999998,
+      "p95Ms": 6670.015511000005,
+      "peakRssKb": 822724,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts7",
+      "size": "small",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        70.21155599999474,
+        65.64204999999492,
+        73.90603600000031,
+        72.3314010000031,
+        67.38902699999744
+      ],
+      "medianMs": 70.21155599999474,
+      "p95Ms": 73.90603600000031,
+      "peakRssKb": 47092,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts7",
+      "size": "small",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        69.07439500000328,
+        66.67798900000344,
+        69.08831900000223,
+        70.17057999999088,
+        71.06285099999513
+      ],
+      "medianMs": 69.08831900000223,
+      "p95Ms": 71.06285099999513,
+      "peakRssKb": 48608,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts7",
+      "size": "medium",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        149.59404499999073,
+        149.30335100000957,
+        154.08196699999098,
+        151.3044649999938,
+        155.11283899999398
+      ],
+      "medianMs": 151.3044649999938,
+      "p95Ms": 155.11283899999398,
+      "peakRssKb": 55408,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts7",
+      "size": "medium",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        165.54804499998863,
+        167.72454399999697,
+        172.14992500000517,
+        162.4710189999896,
+        168.69023999999627
+      ],
+      "medianMs": 167.72454399999697,
+      "p95Ms": 172.14992500000517,
+      "peakRssKb": 61696,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts7",
+      "size": "large",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        1267.1736590000073,
+        1257.3673470000067,
+        1409.9177619999973,
+        1303.9482280000084,
+        1344.032733
+      ],
+      "medianMs": 1303.9482280000084,
+      "p95Ms": 1409.9177619999973,
+      "peakRssKb": 473908,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts7",
+      "size": "large",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [
+        1729.7902769999928,
+        1901.7452170000033,
+        2154.476005000004,
+        2178.597464000006,
+        2188.767540999994
+      ],
+      "medianMs": 2154.476005000004,
+      "p95Ms": 2188.767540999994,
+      "peakRssKb": 533808,
+      "rssSampler": "proc",
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ok": true
+    },
+    {
+      "version": "ts8",
+      "size": "small",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [],
+      "medianMs": null,
+      "p95Ms": null,
+      "peakRssKb": null,
+      "rssSampler": "proc",
+      "exitCodes": [],
+      "ok": false,
+      "error": "package ts8 marked unavailable in bench.json (typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench.)"
+    },
+    {
+      "version": "ts8",
+      "size": "small",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [],
+      "medianMs": null,
+      "p95Ms": null,
+      "peakRssKb": null,
+      "rssSampler": "proc",
+      "exitCodes": [],
+      "ok": false,
+      "error": "package ts8 marked unavailable in bench.json (typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench.)"
+    },
+    {
+      "version": "ts8",
+      "size": "medium",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [],
+      "medianMs": null,
+      "p95Ms": null,
+      "peakRssKb": null,
+      "rssSampler": "proc",
+      "exitCodes": [],
+      "ok": false,
+      "error": "package ts8 marked unavailable in bench.json (typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench.)"
+    },
+    {
+      "version": "ts8",
+      "size": "medium",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [],
+      "medianMs": null,
+      "p95Ms": null,
+      "peakRssKb": null,
+      "rssSampler": "proc",
+      "exitCodes": [],
+      "ok": false,
+      "error": "package ts8 marked unavailable in bench.json (typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench.)"
+    },
+    {
+      "version": "ts8",
+      "size": "large",
+      "mode": "typecheck",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [],
+      "medianMs": null,
+      "p95Ms": null,
+      "peakRssKb": null,
+      "rssSampler": "proc",
+      "exitCodes": [],
+      "ok": false,
+      "error": "package ts8 marked unavailable in bench.json (typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench.)"
+    },
+    {
+      "version": "ts8",
+      "size": "large",
+      "mode": "build",
+      "iterations": 5,
+      "warmup": 1,
+      "durationsMs": [],
+      "medianMs": null,
+      "p95Ms": null,
+      "peakRssKb": null,
+      "rssSampler": "proc",
+      "exitCodes": [],
+      "ok": false,
+      "error": "package ts8 marked unavailable in bench.json (typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench.)"
+    }
+  ],
+  "emit_diff": [
+    {
+      "pair": "ts6_vs_ts7",
+      "size": "small",
+      "identical": true,
+      "diffLines": 0
+    },
+    {
+      "pair": "ts6_vs_ts7",
+      "size": "medium",
+      "identical": true,
+      "diffLines": 0
+    },
+    {
+      "pair": "ts6_vs_ts7",
+      "size": "large",
+      "identical": true,
+      "diffLines": 0
+    }
+  ]
+}
