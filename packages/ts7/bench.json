@@ -1,0 +1,6 @@
+{
+  "label": "TS 7 (Go preview)",
+  "compilerBin": "tsgo",
+  "available": true,
+  "note": "@typescript/native-preview ships the tsgo binary; CLI is a tsc-compatible subset."
+}

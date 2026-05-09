@@ -1,0 +1,6 @@
+{
+  "label": "TS 8 (placeholder)",
+  "compilerBin": "tsc",
+  "available": false,
+  "note": "typescript@8 is not yet published (as of 2026-05). Edit packages/ts8/package.json to add it as a devDependency, set this flag to true, and re-run the bench."
+}

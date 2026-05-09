@@ -1,0 +1,16 @@
+{
+  "size": "large",
+  "seed": 1,
+  "profile": {
+    "fileCount": 1000,
+    "fnPerFile": 8,
+    "classPerFile": 2,
+    "genericChainDepth": 4,
+    "conditionalRatio": 0.4,
+    "mappedRatio": 0.4,
+    "importFanout": 4
+  },
+  "fileCount": 1001,
+  "generatedAt": "2026-05-09T02:55:14.695Z",
+  "generator": "tools/gen-fixtures.ts"
+}
