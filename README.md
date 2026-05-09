@@ -1,4 +1,4 @@
-# perf-eval-ts8
+# perf-eval-typescript
 
 TypeScript 6 / 7 / 8 のコンパイラ実装の **コンパイル速度・型チェック速度・ピークメモリ・出力 JS の差分** を実測するためのベンチ環境です。
 
