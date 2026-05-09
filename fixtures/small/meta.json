@@ -11,6 +11,5 @@
     "importFanout": 2
   },
   "fileCount": 11,
-  "generatedAt": "2026-05-09T02:54:09.410Z",
   "generator": "tools/gen-fixtures.ts"
 }

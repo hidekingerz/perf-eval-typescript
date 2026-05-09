@@ -199,7 +199,6 @@ function main(): void {
     seed,
     profile,
     fileCount: profile.fileCount + 1,
-    generatedAt: new Date().toISOString(),
     generator: "tools/gen-fixtures.ts",
   };
   writeFileSync(join(sizeDir, "meta.json"), JSON.stringify(meta, null, 2) + "\n", "utf8");
