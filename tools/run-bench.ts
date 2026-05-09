@@ -79,12 +79,10 @@ function fixtureExists(size: Size): boolean {
   return existsSync(join(ROOT, "fixtures", size, "src"));
 }
 
-function rmDist(pkg: PackageMeta): void {
-  const dist = join(pkg.dir, "dist");
+function rmDist(pkg: PackageMeta, size: Size): void {
+  const dist = join(pkg.dir, "dist", size);
   if (existsSync(dist)) {
     try {
-      // best-effort wipe; not using fs.rm to keep things simple/portable
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
       const { rmSync } = require("node:fs");
       rmSync(dist, { recursive: true, force: true });
     } catch {
@@ -209,7 +207,7 @@ async function benchOne(
 
   const peaks: number[] = [];
   for (let i = 0; i < WARMUP; i++) {
-    if (mode === "build") rmDist(pkg);
+    if (mode === "build") rmDist(pkg, size);
     const r = await runOnce(bin, args, pkg.dir);
     if (r.exitCode !== 0) {
       result.error = `warmup exited with code ${r.exitCode}`;
@@ -218,7 +216,7 @@ async function benchOne(
     }
   }
   for (let i = 0; i < ITERATIONS; i++) {
-    if (mode === "build") rmDist(pkg);
+    if (mode === "build") rmDist(pkg, size);
     const r = await runOnce(bin, args, pkg.dir);
     result.durationsMs.push(r.durationMs);
     result.exitCodes.push(r.exitCode);

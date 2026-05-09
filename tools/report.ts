@@ -53,6 +53,14 @@ function fmtRss(kb: number | null): string {
   return `${(kb / 1024).toFixed(1)}MiB`;
 }
 
+function shortError(err: string | undefined): string {
+  if (!err) return "no detail";
+  if (err.includes("marked unavailable")) return "package unavailable";
+  if (err.includes("missing")) return "fixtures missing";
+  if (err.includes("not found")) return "compiler not installed";
+  return err.split("\n")[0].slice(0, 60);
+}
+
 function buildTable(runs: Run[], mode: "typecheck" | "build"): string {
   const versions = ["ts6", "ts7", "ts8"];
   const sizes: Array<"small" | "medium" | "large"> = ["small", "medium", "large"];
@@ -68,7 +76,7 @@ function buildTable(runs: Run[], mode: "typecheck" | "build"): string {
         lines.push(`| ${v} | ${s} | — | — | — | (no run) |`);
         continue;
       }
-      const status = r.ok ? "OK" : `SKIP/FAIL: ${r.error ?? ""}`;
+      const status = r.ok ? "OK" : `skipped (${shortError(r.error)})`;
       lines.push(`| ${v} | ${s} | ${fmtMs(r.medianMs)} | ${fmtMs(r.p95Ms)} | ${fmtRss(r.peakRssKb)} | ${status} |`);
     }
   }
